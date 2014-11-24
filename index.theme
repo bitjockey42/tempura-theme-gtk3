@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=Tempura
+Type=X-GNOME-Metatheme
+Comment=
+
+[X-GNOME-Metatheme]
+GtkTheme=Tempura
+MetacityTheme=Tempura
+IconTheme=Adwaita
+CursorTheme=DMZ-White
+CursorSize=18
+NotificationTheme=nodoka
+BackgroundImage=/usr/share/backgrounds/mate/abstract/Arc-Colors-Transparent-Wallpaper.png
