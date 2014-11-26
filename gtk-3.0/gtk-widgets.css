@@ -991,11 +991,11 @@ GtkComboBox .menu {
  ***********/
 .menubar {
     -GtkWidget-window-dragging: true;
-    padding: 2px 2px 1px 1px;
-    border-style: solid;
+    padding: 1px 2px 1px 1px;
     background-color: #b6be59;
-    border-bottom-width: 1px;
-    border-bottom-color: #cfd87b;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #cfd87b;
     color: @menubar_fg_color;
 }
 
