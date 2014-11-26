@@ -991,10 +991,11 @@ GtkComboBox .menu {
  ***********/
 .menubar {
     -GtkWidget-window-dragging: true;
-    padding: 1px 0px 2px;
-    border-style: none;
-    background-color: @menubar_bg_color;
-    background-image: url('assets/Menu-Menubar/menubar.png');
+    padding: 1px 2px;
+    border-style: solid;
+    background-color: #b6be59;
+    border-bottom-width: 1px;
+    border-bottom-color: #cfd87b;
     color: @menubar_fg_color;
 }
 
@@ -2278,7 +2279,6 @@ GtkColorButton.button {
  ***********/
 .toolbar {
     padding: 4px;
-    border-style: none;
     background-color: @toolbar_bg_color;
     background-image: none;
     color: @toolbar_fg_color;
@@ -2315,9 +2315,9 @@ GtkColorButton.button {
     -GtkWidget-window-dragging: true;
 
     padding: 4px;
-    border-width: 0 0 1px 0;
+    border-width: 1px 0 0 0;
     border-style: solid;
-    border-color: shade(@toolbar_bg_color, 0.8);
+    border-color: #817667;
     background-color: @toolbar_bg_color;
     background-image: none;
     color: @toolbar_fg_color;
