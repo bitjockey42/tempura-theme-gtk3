@@ -1315,49 +1315,48 @@ GtkModelButton.button:selected {
 }
 
 .notebook tab.top {
+    border-top-width: 2px;
+    border--right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.notebook tab.top:hover {
+    border-top-color: alpha(@theme_selected_bg_color, 0.3);
+}
+
+.notebook tab.top:active {
+    border-top-color: @theme_selected_bg_color;
+}
+
+.notebook tab.right {
+    border-right-width: 2px;
+    border-top-right-radius: 0;
+}
+
+.notebook tab.right:hover {
+    border-right-color: alpha(@theme_selected_bg_color, 0.3);
+}
+
+.notebook tab.right:active {
+    border-right-color: @theme_selected_bg_color;
+}
+
+.notebook tab.bottom {
     border-bottom-width: 2px;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
 }
 
-.notebook tab.top:hover {
+.notebook tab.bottom:hover {
     border-bottom-color: alpha(@theme_selected_bg_color, 0.3);
 }
 
-.notebook tab.top:active {
+.notebook tab.bottom:active {
     border-bottom-color: @theme_selected_bg_color;
 }
 
-.notebook tab.right {
-    border-left-width: 2px;
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 0;
-}
-
-.notebook tab.right:hover {
-    border-left-color: alpha(@theme_selected_bg_color, 0.3);
-}
-
-.notebook tab.right:active {
-    border-left-color: @theme_selected_bg_color;
-}
-
-.notebook tab.bottom {
-    border-top-width: 2px;
-    border-top-right-radius: 0;
-    border-top-left-radius: 0;
-}
-
-.notebook tab.bottom:hover {
-    border-top-color: alpha(@theme_selected_bg_color, 0.3);
-}
-
-.notebook tab.bottom:active {
-    border-top-color: @theme_selected_bg_color;
-}
-
 .notebook tab.left {
-    border-right-width: 2px;
+    border-left-width: 2px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
@@ -1367,7 +1366,7 @@ GtkModelButton.button:selected {
 }
 
 .notebook tab.left:active {
-    border-right-color: @theme_selected_bg_color;
+    border-left-color: @theme_selected_bg_color;
 }
 
 .notebook tab GtkLabel {
@@ -2333,7 +2332,6 @@ GtkColorButton.button {
 
 .primary-toolbar GtkComboBox,
 .primary-toolbar .button {
-    padding: 4px;
     border-width: 1px;
     border-color: transparent;
     background-color: transparent;
@@ -2347,13 +2345,13 @@ GtkColorButton.button {
 .toolbar .button {
     box-shadow: none;
     border-style: none;
+    border-width: 1px;
     background-color: transparent;
     background-image: none;
     color: @toolbar_fg_color;
 }
 
 .toolbar .button:checked {
-    border-width: 1px;
     border-style: solid;
     border-color: #c6c6c6;
     background-color: #d9d9d9;
