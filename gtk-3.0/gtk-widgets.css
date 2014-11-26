@@ -2327,6 +2327,7 @@ GtkColorButton.button {
 .primary-toolbar .raised.button,
 .toolbar GtkComboBox,
 .toolbar .button {
+    padding: 5px;
     box-shadow: none;
     border-style: none;
     border-width: 1px;
@@ -2336,6 +2337,7 @@ GtkColorButton.button {
 }
 
 .toolbar .button:checked {
+    padding: 0;
     border-style: solid;
     border-color: #c6c6c6;
     background-color: #d9d9d9;
@@ -2345,6 +2347,7 @@ GtkColorButton.button {
 
 .primary-toolbar .button:hover,
 .toolbar .button:hover {
+    padding: 0;
     border-width: 1px;
     border-color: #c6c6c6;
     border-style: solid;
