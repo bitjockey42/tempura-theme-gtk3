@@ -219,12 +219,12 @@ GtkAssistant .sidebar {
 
     padding: 3px;
     border-width: 1px;
-    border-radius: 2px;
     border-style: solid;
     border-color: shade(@theme_bg_color, 0.8);
-    background-color: shade(@theme_bg_color, 1.08);
+    background-color: #e8e8e8;
     background-image: none;
     color: @theme_fg_color;
+    box-shadow: inset 1px 0 0 #f7f7f7, inset -1px 0 0 #f7f7f7, inset 0 1px 0 #f7f7f7, inset 0 -1px 0 #f7f7f7;
 }
 
 .button:hover {
@@ -424,7 +424,7 @@ GtkDrawingArea {
 }
 
 GtkDrawingArea:insensitive {
-    background-color: shade(@theme_base_color, 0.9);
+    background-color: shade(@theme_bg_color, 0.9);
 }
 
 /***********
