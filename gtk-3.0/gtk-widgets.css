@@ -2318,9 +2318,9 @@ GtkColorButton.button {
     -GtkWidget-window-dragging: true;
 
     padding: 4px;
-    border-width: 1px 0 0 0;
-    border-style: none;
-    border-color: #817667;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: #d2d2d2;
     background-color: @toolbar_bg_color;
     background-image: none;
     color: @toolbar_fg_color;
