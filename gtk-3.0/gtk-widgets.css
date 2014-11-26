@@ -252,13 +252,14 @@ GtkAssistant .sidebar {
 
 .button:insensitive {
     border-color: shade(@theme_bg_color, 0.85);
-    background-color: shade(@theme_bg_color, 0.9);
+    background-color: #ececec;
     background-image: none;
+    color: #eee;
 }
 
 .button:active *:insensitive {
     border-color: shade(@theme_bg_color, 0.75);
-    background-color: shade(@theme_bg_color, 0.80);
+    background-color: #ececec;
     background-image: none;
 }
 
