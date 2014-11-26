@@ -954,9 +954,11 @@ GtkComboBox .menu {
 .header-bar .menu,
 .header-bar .primary-toolbar .menu,
 .menu {
-    padding: 0;
+    padding: 2px;
     border-radius: 0;
-    border-style: none;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #817667;
     background-color: @menu_bg_color;
     color: @menu_fg_color;
 }
@@ -1038,7 +1040,6 @@ GtkTreeMenu .menuitem {
 .menuitem,
 .menu .menuitem {
     -GtkMenuItem-arrow-scaling: 0.5;
-
     padding: 3px;
     border-width: 1px;
     border-style: solid;
