@@ -2394,8 +2394,8 @@ GtkColorButton.button {
 
 .primary-toolbar .button:insensitive,
 .toolbar .button:insensitive {
-    border-color: shade(@toolbar_bg_color, 0.85);
-    background-color: shade(@toolbar_bg_color, 0.9);
+    border-style: none;
+    background-color: transparent;
     background-image: none;
 }
 
