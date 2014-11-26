@@ -1015,6 +1015,7 @@ GtkComboBox .menu {
 
 .menubar.menuitem:hover,
 .menubar .menuitem:hover {
+    box-shadow: inset 0 1px 0 #e0e89c, inset 1px 0 0 #e0e89c, inset -1px 0 #e0e89c;
     border-color: #817667;
     border-bottom-color: transparent;
     background-color: #cad273;
