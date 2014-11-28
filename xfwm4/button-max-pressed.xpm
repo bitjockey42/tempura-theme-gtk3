@@ -1,0 +1,20 @@
+/* XPM */
+static char *button_max_pressed[] = {
+/* columns rows colors chars-per-pixel */
+"11 11 3 1 ",
+"  c #383535",
+". c #525050",
+"X c None",
+/* pixels */
+"XXXXXXXXXXX",
+"XXXXXXXXXXX",
+"XX.......XX",
+"XX.     .XX",
+"XX. ... .XX",
+"XX. .X. .XX",
+"XX. ... .XX",
+"XX.     .XX",
+"XX.......XX",
+"XXXXXXXXXXX",
+"XXXXXXXXXXX"
+};

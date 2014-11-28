@@ -1,0 +1,20 @@
+/* XPM */
+static char *button_max_inactive[] = {
+/* columns rows colors chars-per-pixel */
+"11 11 3 1 ",
+"  c #525050",
+". c #CECAC9",
+"X c None",
+/* pixels */
+"XXXXXXXXXXX",
+"XXXXXXXXXXX",
+"XX       XX",
+"XX ..... XX",
+"XX .   . XX",
+"XX . X . XX",
+"XX .   . XX",
+"XX ..... XX",
+"XX       XX",
+"XXXXXXXXXXX",
+"XXXXXXXXXXX"
+};

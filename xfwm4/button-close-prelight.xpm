@@ -1,0 +1,20 @@
+/* XPM */
+static char *button_close_prelight[] = {
+/* columns rows colors chars-per-pixel */
+"11 11 3 1 ",
+"  c #3C3838",
+". c #FCAF3E",
+"X c None",
+/* pixels */
+"XXXXXXXXXXX",
+"XXXXXXXXXXX",
+"XXX XXX XXX",
+"XX . X . XX",
+"XXX . . XXX",
+"XXXX . XXXX",
+"XXX . . XXX",
+"XX . X . XX",
+"XXX XXX XXX",
+"XXXXXXXXXXX",
+"XXXXXXXXXXX"
+};
