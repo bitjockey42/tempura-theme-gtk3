@@ -1,5 +1,7 @@
 # Information
-This is a port (and continuation) of the beautiful [Tempura](http://lokheed.deviantart.com/art/Tempura-Theme-32162210) theme by [lokheed](http://lokheed.deviantart.com/) to `gtk-3.x`. 
+This is a port (and continuation) of the beautiful [Tempura](http://lokheed.deviantart.com/art/Tempura-Theme-32162210) theme by [lokheed](http://lokheed.deviantart.com/) to `gtk-3.x`.
+
+![screenshot](screenshot.png)
 
 # Installation
 
