@@ -2285,6 +2285,26 @@ GtkColorButton.button {
     border-color: @toolbar_bg_color;
 }
 
+.primary-toolbar.button:hover,
+.primary-toolbar .button:hover {
+    border-color: #c6c6c6;
+    background-color: #eeeeee;
+    box-shadow: inset 1px 0 0 #f7f7f7,
+                inset -1px 0 0 #f7f7f7,
+                inset 0 1px 0 #f7f7f7,
+                inset 0 -1px 0 #f7f7f7;
+}
+
+.primary-toolbar.button:checked,
+.primary-toolbar .button:checked {
+    border-color: #c6c6c6;
+    background-color: #d9d9d9;
+    box-shadow: inset 1px 0 0 #ececec,
+                inset -1px 0 0 #ececec,
+                inset 0 1px 0 #ececec,
+                inset 0 -1px 0 #ececec;
+}
+
 /***********
  * toolbar *
  ***********/
