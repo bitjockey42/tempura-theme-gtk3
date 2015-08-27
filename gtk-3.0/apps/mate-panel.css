@@ -1,0 +1,284 @@
+/****************
+ * Mate-Panel *
+ ****************/
+
+/* the panel bar itself */
+.mate-panel-menu-bar {
+    background-color: @theme_bg_color;
+    background-image: none;
+    /* normal panel */
+    color: @theme_fg_color;
+    /* transparent panel */
+/*    color: @theme_selected_fg_color; */
+    text-shadow: none;
+}
+
+/* first make all transparent */
+WnckSelector.menubar,
+MatePanelApplet GtkToggleButton.button {
+    border-image: none;
+    background-image: none;
+}
+
+/* dictionary applet */
+GdictApplet .entry {
+    /* normal panel */
+    color: @theme_fg_color;
+    /* transparent panel */
+/*    color: @theme_selected_fg_color; */
+    background-image: none;
+    background-color: transparent;
+    border-width: 1px;
+    padding: 3px 4px;
+}
+
+MatePanelApplet {
+    border-width: 0;
+}
+
+MatePanelAppletFrameDBus PanelSeparator,
+PanelSeparator {
+    border-width: 0;
+    background-color: @theme_fg_color;
+    color: shade (@theme_fg_color, 4.30);
+    text-shadow: none;
+}
+
+/* the grid left from wnckpager and wncktasklist */
+MatePanelAppletFrameDBus {
+    background-image: -gtk-scaled(url("assets/panel-grid.svg"));
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+/* main menu */
+/* set normal menubar button */
+PanelMenuBar.menubar .menuitem {
+    transition: all 200ms ease-out;
+    text-shadow: none;
+}
+
+/* set selected menubar button */
+PanelMenuBar.menubar .menuitem:hover {
+    background-image: linear-gradient(to bottom,
+                                      shade (@theme_selected_bg_color, 0.86),
+                                      shade (@theme_selected_bg_color, 0.26));
+    color: shade (@theme_selected_fg_color, 1.00);
+    text-shadow: none;
+    border-style: solid;
+    border-width: 0px;
+    border-radius: 5px;
+}
+
+/* set menubar menuitem separator */
+PanelMenuBar.menubar .menu .menuitem.separator {
+    color: @menu_separator;
+    -GtkMenuItem-horizontal-padding: 0;
+}
+
+/* set normal menubar menuitem */
+PanelMenuBar.menubar .menu .menuitem {
+    transition: all 150ms ease-out;
+    padding: 6px;
+}
+
+/* set selected menubar menuitem */
+PanelMenuBar.menubar .menu .menuitem:checked:hover,
+PanelMenuBar.menubar .menu .menuitem:active:hover,
+PanelMenuBar.menubar .menu .menuitem:hover {
+    background-image: linear-gradient(to bottom,
+                                      shade (@theme_selected_bg_color, 1.0),
+                                      shade (@theme_selected_bg_color, 0.85));
+    color: shade (@theme_selected_fg_color, 1.00);
+    text-shadow: none;
+    border-style: none;
+    border-width: 0px;
+    border-radius: 0px;
+}
+
+/* mate menu */
+
+/* Mate menu button hover */
+PanelMenuButton.button:hover {
+    color: shade (@theme_selected_bg_color, 1.00);
+}
+
+/* Mate menu menuitem */
+PanelMenuButton .menu .menuitem {
+    padding: 6px;
+}
+
+/* Mate menu menuitem separator */
+PanelMenuButton .menu .menuitem.separator {
+    color: @menu_separator;
+    -GtkMenuItem-horizontal-padding: 0;
+}
+
+/* desktop-applet, clockapplet, drivemount, character-map,
+dictionary */
+MatePanelApplet .button,
+MatePanelApplet .button.flat {
+    transition: all 400ms ease-out;
+    background-image: none;
+    background-color: transparent;
+/*    color: @theme_selected_fg_color;*/
+    border-image: none;
+    border-style: solid;
+    border-width: 0px;
+    border-radius: 0px;
+    text-shadow: none;
+    -GtkWidget-window-dragging: true;
+    padding: 4px 4px 4px 4px;
+}
+
+MatePanelApplet .button:checked,
+MatePanelApplet .button:active,
+MatePanelApplet .button:checked:hover,
+MatePanelApplet .button:active:hover,
+MatePanelApplet .button.flat:checked,
+MatePanelApplet .button.flat:active,
+MatePanelApplet .button.flat:checked:hover,
+MatePanelApplet .button.flat:active:hover {
+    background-image: linear-gradient(to bottom,
+                                      shade (@theme_selected_bg_color, 0.86),
+                                      shade (@theme_selected_bg_color, 0.26));
+    background-color: transparent;
+    color: shade (@theme_selected_fg_color, 1.00);
+    border-image: none;
+    border-style: solid;
+    border-width: 0px;
+    border-radius: 5px;
+    text-shadow: none;
+    -GtkWidget-window-dragging: true;
+    padding: 4px 4px 4px 4px;
+}
+
+MatePanelApplet .button:hover,
+MatePanelApplet .button.flat:hover {
+    background-image: linear-gradient(to bottom,
+                                      @theme_bg_color,
+                                      shade (@theme_selected_bg_color, 0.86));
+    background-color: transparent;
+    color: shade (@theme_text_color, 1.0);
+    border-image: none;
+    border-style: solid;
+    border-width: 0px;
+    border-radius: 5px;
+    text-shadow: none;
+    -GtkWidget-window-dragging: true;
+    padding: 4px 4px 4px 4px;
+}
+
+/*Wncklist */
+WnckTasklist .button {
+    transition: all 400ms ease-out;
+    background-image: linear-gradient(to bottom,
+                                      shade (@theme_bg_color, 1.0),
+                                      shade (@theme_bg_color, 0.96));
+    background-color: transparent;
+/*    color: @theme_selected_fg_color;*/
+    border-image: none;
+    border-style: solid;
+    border-width: 0px;
+    border-radius: 5px;
+    text-shadow: none;
+    -GtkWidget-window-dragging: true;
+}
+
+WnckTasklist .button:checked:hover,
+WnckTasklist .button:checked,
+WnckTasklist .button:active:hover,
+WnckTasklist .button:active {
+    background-image: linear-gradient(to bottom,
+                                      shade (@theme_selected_bg_color, 0.86),
+                                      shade (@theme_selected_bg_color, 0.26));
+    background-color: transparent;
+    color: shade (@theme_selected_fg_color, 1.00);
+    border-image: none;
+    border-style: solid;
+    border-width: 0px;
+    border-radius: 5px;
+    text-shadow: none;
+    -GtkWidget-window-dragging: true;
+}
+
+WnckTasklist .button:hover,
+WnckTasklist .button.flat:hover {
+    background-image: linear-gradient(to bottom,
+                                      @theme_bg_color,
+                                      shade (@theme_selected_bg_color, 0.86));
+    background-color: transparent;
+    color: shade (@theme_text_color, 1.0);
+    border-image: none;
+    border-style: solid;
+    border-width: 0px;
+    border-radius: 5px;
+    text-shadow: none;
+    -GtkWidget-window-dragging: true;
+}
+
+/* set selected button WnckSelector */
+WnckSelector.menubar .menuitem:hover {
+    background-image: linear-gradient(to bottom,
+                                      shade (@theme_selected_bg_color, 0.86),
+                                      shade (@theme_selected_bg_color, 0.26));
+    background-color: transparent;
+    border-style: solid;
+    border-width: 0px;
+    border-radius: 5px;
+}
+
+/* set WnckSelector normal menuitem */
+WnckSelector.menubar .menu .menuitem {
+    background-color: @menu_bg_color;
+    background-image: none;
+    color: shade (@theme_fg_color, 1.00);
+    text-shadow: none;
+}
+
+/* set WnckSelector selected menuitem */
+WnckSelector.menubar .menu .menuitem:hover {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom,
+                                      shade (@theme_selected_bg_color, 1.0),
+                                      shade (@theme_selected_bg_color, 0.85));
+    color: shade (@theme_selected_fg_color, 1.00);
+    text-shadow: none;
+    border-radius: 0px;
+}
+
+/* set WnckSelector menuitem separator */WnckSelector.menubar .menu .menuitem.separator {
+    color: @menu_separator;
+    -GtkMenuItem-horizontal-padding: 0;
+}
+
+WnckPager {
+    background-image: none;
+    border-color: transparent;
+    background-color: transparent;
+}
+
+/* prelight of WnckPager */
+WnckPager:hover {
+    background-image: linear-gradient(to bottom,
+                                      @theme_bg_color,
+                                      shade (@theme_selected_bg_color, 0.86));
+    background-color: @theme_base_color;
+}
+
+ClockBox,
+.mate-panel-menu-bar.menubar,
+MatePanelApplet > GtkMenuBar.menubar {
+    font: normal;
+}
+
+NaTrayApplet {
+    -NaTrayApplet-icon-padding: 12px;
+    -NaTrayApplet-icon-size: 16;
+}
+
+/* Classic icon style */
+.mate-panel-menu-bar {
+    -PanelMenuBar-icon-visible: true;
+}
