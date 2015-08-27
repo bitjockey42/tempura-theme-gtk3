@@ -68,7 +68,7 @@ PanelMenuBar.menubar .menuitem:hover {
     text-shadow: none;
     border-style: solid;
     border-width: 0px;
-    border-radius: 5px;
+    border-radius: 0px;
 }
 
 /* set menubar menuitem separator */
@@ -148,7 +148,7 @@ MatePanelApplet .button.flat:active:hover {
     border-image: none;
     border-style: solid;
     border-width: 0px;
-    border-radius: 5px;
+    border-radius: 0px;
     text-shadow: none;
     -GtkWidget-window-dragging: true;
     padding: 4px 4px 4px 4px;
@@ -164,7 +164,7 @@ MatePanelApplet .button.flat:hover {
     border-image: none;
     border-style: solid;
     border-width: 0px;
-    border-radius: 5px;
+    border-radius: 0px;
     text-shadow: none;
     -GtkWidget-window-dragging: true;
     padding: 4px 4px 4px 4px;
@@ -181,7 +181,7 @@ WnckTasklist .button {
     border-image: none;
     border-style: solid;
     border-width: 0px;
-    border-radius: 5px;
+    border-radius: 0px;
     text-shadow: none;
     -GtkWidget-window-dragging: true;
 }
@@ -198,7 +198,7 @@ WnckTasklist .button:active {
     border-image: none;
     border-style: solid;
     border-width: 0px;
-    border-radius: 5px;
+    border-radius: 0px;
     text-shadow: none;
     -GtkWidget-window-dragging: true;
 }
@@ -213,7 +213,7 @@ WnckTasklist .button.flat:hover {
     border-image: none;
     border-style: solid;
     border-width: 0px;
-    border-radius: 5px;
+    border-radius: 0px;
     text-shadow: none;
     -GtkWidget-window-dragging: true;
 }
@@ -226,7 +226,7 @@ WnckSelector.menubar .menuitem:hover {
     background-color: transparent;
     border-style: solid;
     border-width: 0px;
-    border-radius: 5px;
+    border-radius: 0px;
 }
 
 /* set WnckSelector normal menuitem */
