@@ -21,12 +21,9 @@ PanelSeparator {
 }
 
 WnckTasklist .button {
-    background-color: transparent;
+    background-color: @mate_panel_button;
     color: @theme_fg_color;
-    border-color: transparent;
-    border-style: solid;
-    border-width: 0px;
-    border-radius: 0px;
+	border: none;
     text-shadow: none;
     -GtkWidget-window-dragging: true;
 }
@@ -35,9 +32,32 @@ WnckTasklist .button:checked:hover,
 WnckTasklist .button:checked,
 WnckTasklist .button:active:hover,
 WnckTasklist .button:active,
-WnckTasklist .button:hover	{
+WnckTasklist .button:hover,
+WnckTasklist .button.flat:hover{
     background-color: @mate_panel_button_selected;
     -GtkWidget-window-dragging: true;
 }
 
 
+MatePanelApplet .button,
+MatePanelApplet .button.flat {
+    background-color: @mate_panel_button;
+    border-color: @mate_panel_button;
+	border-width: 1px;
+    text-shadow: none;
+    -GtkWidget-window-dragging: true;
+}
+
+MatePanelApplet .button:checked,
+MatePanelApplet .button:active,
+MatePanelApplet .button:checked:hover,
+MatePanelApplet .button:active:hover,
+MatePanelApplet .button.flat:checked,
+MatePanelApplet .button.flat:active,
+MatePanelApplet .button.flat:checked:hover,
+MatePanelApplet .button.flat:active:hover {
+    background-color: @mate_panel_button_selected;
+    border: none;
+    text-shadow: none;
+    -GtkWidget-window-dragging: true;
+}

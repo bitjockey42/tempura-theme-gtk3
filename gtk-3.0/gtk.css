@@ -77,7 +77,7 @@
 
 /* mate panel colors */
 @define-color mate_panel_bg #E9E9E9;
-@define-color mate_panel_button #FFFFFF;
+@define-color mate_panel_button @mate_panel_bg;
 @define-color mate_panel_button_selected #D2D2D2;
 
 @import url("gtk-widgets.css");
