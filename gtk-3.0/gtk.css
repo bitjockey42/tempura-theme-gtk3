@@ -53,6 +53,9 @@
 @define-color panel_bg_color @dark_bg_color;
 @define-color panel_fg_color @dark_fg_color;
 
+/* progressbar colors */
+@define-color progressbar_bg #A8A5A1;
+
 /* osd */
 @define-color osd_base @dark_bg_color;
 @define-color osd_fg @dark_fg_color;

@@ -21,6 +21,7 @@ PanelSeparator {
 }
 
 WnckTasklist .button {
+	padding: 0;
     background-color: @mate_panel_button;
     color: @theme_fg_color;
 	border: none;

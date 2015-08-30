@@ -320,8 +320,11 @@ row:selected:focus {
 .radio,
 .check:insensitive,
 .radio:insensitive {
-    border-style: none;
-    background-color: transparent;
+    border-width: 1px;
+    border-style: solid;
+    border-color: shade(@theme_bg_color, 0.8);
+    background-color: @theme_base_color;
+    color: @theme_fg_color;
 }
 
 GtkCheckButton:hover,
@@ -502,7 +505,7 @@ GtkComboBox.combobox-entry .button:insensitive {
     border-width: 1px;
     border-style: solid;
     border-color: shade(@theme_bg_color, 0.8);
-    border-radius: 2px;
+    border-radius: 0px;
     background-color: @theme_base_color;
     background-image: none;
     color: @theme_text_color;
@@ -527,7 +530,7 @@ GtkComboBox.combobox-entry .button:insensitive {
 
 .entry.progressbar {
     border-width: 0;
-    border-radius: 2px;
+    border-radius: 0;
     background-color: @theme_selected_bg_color;
     background-image: none;
     color: @theme_selected_fg_color;
@@ -1421,7 +1424,7 @@ GtkModelButton.button:selected {
 GtkProgressBar {
     padding: 0;
     border-width: 1px;
-    border-radius: 2px;
+    border-radius: 0;
     font-size: smaller;
     color: alpha(@theme_fg_color, 0.6);
 }
@@ -1457,12 +1460,12 @@ GtkProgressBar {
     border-width: 1px;
     border-style: solid;
     border-color: shade(@theme_bg_color, 0.8);
-    background-color: shade(@theme_bg_color, 1.08);
+    background-color: @progressbar_bg;
     background-image: none;
 }
 
 .trough.vertical {
-    background-color: shade(@theme_bg_color, 1.08);
+    background-color: @progressbar_bg;
     background-image: none;
 }
 
@@ -1485,7 +1488,6 @@ GtkLevelBar.vertical {
 .level-bar.fill-block {
     border-width: 1px;
     border-style: solid;
-    border-color: shade(@theme_selected_bg_color, 0.9);
     background-color: @theme_selected_bg_color;
 }
 
