@@ -955,7 +955,6 @@ GtkComboBox .menu {
 .header-bar .menu,
 .header-bar .primary-toolbar .menu,
 .menu {
-    padding: 2px 2px 2px 5px;
     border-width: 1px;
     border-style: solid;
     border-color: #817667;

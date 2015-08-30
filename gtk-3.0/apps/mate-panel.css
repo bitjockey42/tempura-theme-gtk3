@@ -9,7 +9,7 @@
     /* normal panel */
     color: @theme_fg_color;
     /* transparent panel */
-/*    color: @theme_selected_fg_color; */
+	/*    color: @theme_selected_fg_color; */
     text-shadow: none;
 }
 
